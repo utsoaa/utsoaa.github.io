@@ -1,0 +1,60 @@
+.navbar {
+    background-color: white;
+}
+.navbar-header .navbar-brand {
+    font-size: 35px;
+    color: #BF5700;
+}
+.navbar-collapse .nav {
+    font-size: 16px;
+    color: white;
+}
+.hero {
+    background-image: url('../images/capitol.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    min-height: 400px;
+    height: 600px;
+    width: inherit;
+}
+.jumbotron {
+    background: rgba(220, 220, 220, .8);
+}
+.links {
+    background-color: white;
+}
+.copyrights {
+    text-align: center;
+    /*background-color: #BF5700;
+    color: white;*/
+}
+.links p {
+    text-align: center;
+}
+.link {
+    /*background-color: #B2FFFF;*/
+    padding: 15px;
+    margin: 10px;
+}
+
+.ss-form {
+    text-align: center;
+    background-color: #E6E6E6;
+}
+/*
+.background {
+    position: relative;
+    background-image: url('../images/uttower.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    min-height: 400px;
+    height: 600px;
+}
+*/
+
+.textArea { 
+    /*background: white;
+    border: 5px solid grey;*/   
+}
