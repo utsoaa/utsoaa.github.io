@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<title>About LSOAA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("/w3images/mac.jpg");
+    min-height: 100%;
+}
+.w3-navbar li a {
+    padding: 16px;
+    float: left;
+}
+</style>
+
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <ul class="w3-navbar w3-white w3-card-2" id="myNavbar">
+    <li>
+      <a href="index.html" class="w3-wide w3-hover-text-gray" style="color: #cc5500">LSOAA</a>
+    </li>
+    <!-- Right-sided navbar links -->
+    <li class="w3-right w3-hide-small">
+      <a href="about.html">About Us</a>
+      <a href="announce.html">Announcements</a>
+      <a href="../LSOAA/competition.html">Tournament Info</a>
+      <a href="contact.html">Contact Us</a>
+    </li>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    <li>
+      <a href="javascript:void(0)" class="w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars w3-padding-right w3-padding-left"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+<!-- Sidenav on small screens when clicking the menu icon -->
+<nav class="w3-sidenav w3-black w3-card-2 w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidenav">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-large w3-padding-16">Close ×</a>
+  <a href="about.html" onclick="w3_close()">About</a>
+  <a href="announce.html" onclick="w3_close()">Announcements</a>
+  <a href="../LSOAA/competition.html" onclick="w3_close()">Tournament Info</a>
+  <a href="contact.html" onclick="w3_close()">Contact Us</a>
+</nav>
+
+
+<!-- About Section -->
+<div class="w3-container w3-padding-128" id="about">
+  <h3 class="w3-center">ABOUT US</h3>
+  <p class="w3-center w3-large">Key features of our company</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Responsive</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Passion</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Design</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Support</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+  </div>
+</div>
+
+
+<!--Footer-->
+<footer class="w3-center w3-black w3-padding-64">
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/groups/longhorn.soaa/"><i class="fa fa-facebook-official w3-hover-text-blue"></i></a>
+    <i class="fa fa-instagram w3-hover-text-orange"></i>
+    <a href="https://twitter.com/atx_scioly"><i class="fa fa-twitter w3-hover-text-light-blue"></i></a>
+  </div>
+</footer>
+
+
+</body>
+</html>
