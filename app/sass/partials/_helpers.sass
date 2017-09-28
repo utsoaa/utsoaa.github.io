@@ -5,6 +5,9 @@
 section
 	padding: 50px 0 50px 0
 
+	&:focus
+		outline: none
+
 .flex
 	display: flex
 
@@ -18,11 +21,17 @@ section
 // Buttons
 
 .btn
-	padding: 10px 15px
-	border: 1px solid black
+	padding: 15px 25px
+	border: 1px solid $burnt-orange
 	text-decoration: none
-	color: black
+	color: $burnt-orange
 	text-align: center
+	transition: 0.2s ease all
+	border-radius: 30px
+
+	&:hover
+		color: white
+		background-color: $burnt-orange
 
 .btn-bright
 	color: white
