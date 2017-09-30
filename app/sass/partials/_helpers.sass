@@ -3,10 +3,14 @@
 	margin: 0 auto
 
 section
-	padding: 50px 0 50px 0
+	margin-top: $nav-height*1.25
+	margin-bottom: $nav-height*1.25
 
 	&:focus
 		outline: none
+
+	&:last-of-type
+		margin-bottom: $nav-height*1.25
 
 .flex
 	display: flex
@@ -22,12 +26,14 @@ section
 
 .btn
 	padding: 15px 25px
+	margin: 10px 0
 	border: 1px solid $burnt-orange
 	text-decoration: none
 	color: $burnt-orange
 	text-align: center
 	transition: 0.2s ease all
 	border-radius: 30px
+	font-size: $leading*.6
 
 	&:hover
 		color: white
