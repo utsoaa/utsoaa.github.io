@@ -1,0 +1,26 @@
+form
+	margin-top: 25px
+	input
+		border: none
+		border-bottom: 1px solid black
+		width: 50%
+		margin: 25px 0
+		line-height: $baseLineHeight*1.5
+
+		&:focus
+			outline: none
+	textarea
+		@extend input
+		border: 1px solid black
+		padding: 15px
+		line-height: $baseLineHeight
+
+#submit
+	width: 50%
+	max-width: 250px
+	background-color: white
+	cursor: pointer
+	margin: 25px 0
+
+	&:hover
+		background-color: $burnt-orange

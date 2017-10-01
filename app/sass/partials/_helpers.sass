@@ -1,0 +1,52 @@
+.container
+	width: 80%
+	margin: 0 auto
+
+section
+	margin-top: $nav-height/2
+	margin-bottom: $nav-height/2
+	padding-top: $nav-height/4
+	padding-bottom: $nav-height/4
+
+	&:focus
+		outline: none
+
+	&:last-of-type
+		margin-bottom: $nav-height*1.25
+
+.flex
+	display: flex
+
+.center-both
+	align-items: center
+	justify-content: center
+
+.cl
+	flex-direction: column
+
+// Buttons
+
+.btn
+	padding: 15px 25px
+	margin: 10px 0
+	border: 1px solid $burnt-orange
+	text-decoration: none
+	color: $burnt-orange
+	text-align: center
+	transition: 0.2s ease all
+	border-radius: 30px
+	font-size: $leading*.6
+
+	&:hover
+		color: white
+		background-color: $burnt-orange
+
+.btn-bright
+	color: white
+	border-color: $burnt-orange
+	background-color: $burnt-orange
+	transition: 0.2s ease all
+
+	&:hover
+		color: $burnt-orange
+		background-color: white

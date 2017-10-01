@@ -1,0 +1,25 @@
+nav
+	height: $nav-height
+	width: 100%
+	background-color: darken($burnt-orange, 5%)
+	position: fixed
+	bottom: 0
+	ul
+		list-style: none
+		margin: 0
+		padding: 0
+		height: 100%
+		display: flex
+		justify-content: space-between
+
+		li
+			display: flex
+			align-items: center
+			justify-content: center
+			padding: 15px
+		a
+			text-decoration: none
+			color: darken(white, 3%)
+		li.active
+			border-bottom: 5px solid lighten($burnt-orange, 30%)
+			color: white
