@@ -1,5 +1,9 @@
 $(document).ready( () => {
+
+
 	// Smooth Scrolling
+	
+	var lastLink = $('nav li').first()
 	// Select all links with hashes
 	$('a[href*="#"]')
 	  // Remove links that don't actually link to anything
@@ -35,5 +39,12 @@ $(document).ready( () => {
 					});
 				}
 			}
+			
+			// Set active tab
+			lastLink.removeClass('active')
+			$(this).parents('li').addClass('active')
+			lastLink = $(this).parents('li')
 		});
+
+
 })
