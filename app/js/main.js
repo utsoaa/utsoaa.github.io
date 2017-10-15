@@ -47,11 +47,27 @@ $(document).ready( () => {
 		});
 
 	$(window).scroll((e) => {
-		let currentPos = $(window).scrollTop();
+		let currentPos = $(window).scrollTop()
 
-		for (var k in sections) {
-			console.log(k)
-			console.log(sections[k])
+		var sectionNames = Object.keys(sections)
+		var currentSection = sectionNames[0]
+
+		for (var i = 1; i < sectionNames.length; i++) {
+			if (sections[sectionNames[i]] > currentPos-1) {
+				currentSection = '#'+sectionNames[i-1]
+
+				// Remove .active from old tab, add to new one
+				$('.active').toggleClass('active')
+				$('a[href="'+currentSection+'"]').parent('li').toggleClass('active')
+				
+				break;
+			}
+
+			// If we get to end of keys
+			currentSection = '#'+sectionNames[sectionNames.length-1]
+			// Remove .active from old tab, add to new one
+			$('.active').toggleClass('active')
+			$('a[href="'+currentSection+'"]').parent('li').toggleClass('active')
 		}
 	})
 
@@ -61,10 +77,8 @@ $(document).ready( () => {
 		data['landing-container'] = 0
 
 		$('section').each( function() {
-			console.log(this)
 			data[this.id] = this.offsetTop
 		})
-		console.log(data)
 		return data
 	}
 })
