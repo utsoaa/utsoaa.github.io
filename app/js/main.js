@@ -1,8 +1,8 @@
 $(document).ready( () => {
-
+	// Initialize heights with height of each section
+	var sections = getSectionNamesAndHeights()
 
 	// Smooth Scrolling
-	
 	var lastLink = $('nav li').first()
 	// Select all links with hashes
 	$('a[href*="#"]')
@@ -46,5 +46,26 @@ $(document).ready( () => {
 			lastLink = $(this).parents('li')
 		});
 
+	$(window).scroll((e) => {
+		let currentPos = $(window).scrollTop();
 
+		for (var k in sections) {
+			console.log(k)
+			console.log(sections[k])
+		}
+	})
+
+	function getSectionNamesAndHeights() {
+		let data = {}
+
+		data['landing-container'] = 0
+
+		$('section').each( function() {
+			console.log(this)
+			data[this.id] = this.offsetTop
+		})
+		console.log(data)
+		return data
+	}
 })
+
