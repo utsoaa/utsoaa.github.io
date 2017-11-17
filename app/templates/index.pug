@@ -1,0 +1,14 @@
+extends partials/_layout
+
+block content
+	#landing-container.container.flex.cl.center-both
+		img#logo(src='dist/imgs/logo.svg')
+		#landing-buttons.flex.cl
+			a.btn.btn-bright(href='#competitions') Invitational Details
+			a.btn(href='#about') Learn More
+		//- #scroll-container.flex.cl.center-both
+		//- 	p Learn more
+		//- 	a#scroll-icon(href='#about')
+	include partials/sections/_about
+	include partials/sections/_competitions
+	include partials/sections/_join
