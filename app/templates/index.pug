@@ -1,12 +1,10 @@
 extends partials/_layout
 
 block content
-	#landing-container.container.flex.cl.center-both
-		img#logo(src='dist/imgs/logo.svg')
-		h4 Rules for Algorithm Design are posted!
-		#landing-buttons.flex.cl
-			a.btn(href='#regional') Regional Info
-			a.btn.btn-bright(href='#resources') Resources
-	include partials/sections/_about
-	include partials/sections/_competitions
-	include partials/sections/_join
+	section#home
+		#landing-container.container.flex.cl.center-both
+			img#logo(src='dist/imgs/logo.svg')
+			h4 Rules for Algorithm Design are posted!
+			#landing-buttons.flex.cl
+				a.btn(href='./competitions.html') Regional Info
+				a.btn.btn-bright(href='./resources.html') Resources
